@@ -1,0 +1,10 @@
+You'll need variables for dash speed, maximum dash time, and a timer. When you press the dash button, it'll change your movement speed to the dash speed, and set the timer to the dash time. When either the timer runs out and you're on the ground, your movement speed will be reset to the normal movement speed. If you jump at any point during the dash, you'll maintain the dash speed even after the timer runs out, until you hit the ground.
+
+X2-style airdashing is a bit different. If you press the dash button while you're in the air, you'll move at the dash speed, but you return to normal movement speed when the timer runs out, even if you're still in the air. You may need to add a bool that indicates if the dash was an airdash.
+
+Here's how it'll go:
+1. Press dash button.
+2. Check if in air or on ground.
+3. Change movement speed to dash speed and set a timer equal to the dash time you set.
+4. When the player lets go of the dash button, OR time runs out AND the player either airdashed or is on the ground, reset movement speed to normal.
+
